@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/dev/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '0d0(ijb_qhi*i6p#++lmeix$g1__$1b!67xody&=e5wi=5!s7e'
+SECRET_KEY = '0mby#bysp7$7l80m71(oo9s0a1@d6!mt-qb@nx*187tpzl8evf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,7 +39,6 @@ INSTALLED_APPS = [
         'django.contrib.staticfiles',
         'blog',
     ]
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -79,8 +78,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+               }
+            }
 
 
 # Password validation
@@ -121,4 +120,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
